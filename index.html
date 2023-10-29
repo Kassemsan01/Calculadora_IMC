@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo IMC</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="script.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="./img/academia.png">
+</head>
+
+<body>
+
+    <form id="container">
+        <h1>Calculadora de IMC</h1>
+
+        <label>Peso</label>
+        <input type="text" id="container_input" placeholder="Exemplo 85.50" required onchange="this.value = this.value.replace(/,/g, '.')">
+
+
+        <label>Altura</label>
+        <input type="text" id="container_input1" placeholder="Exemplo 1.75" required onchange="this.value = this.value.replace(/,/g, '.')">
+
+
+        <input type="submit" value="Calcular">
+
+    </form>
+
+    <div class="resultado_imc">
+        <div id="operacao">
+            <h1>Resultado</h1>
+        </div>
+    </div>
+
+
+    <img src="./img/_f0bfa4a8-c5a3-4774-b015-3e1b69a15566.jpeg" alt="Desenho de uma pesoa acima do peso" id="desenho1">
+    <img src="./img/download-fotor-bg-remover-20231026142517 (1).png" alt="Desenho de uma pessoa Musculosa" id="desenho2">
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica;
+}
+
+body{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    min-height: 100vh;
+    background-color: #A6E6FF;
+}
+
+#container{
+    color: #000000;
+    border: none;
+    padding: 30px 30px 30px 30px;
+    background-color: #fff;
+    width: 300px;
+    height: 400px;
+    display: block;
+    border-radius: 30px;
+
+}
+
+#container h1{
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+#container input[type="text"]{
+    text-align: center;
+    justify-items: center;
+    padding: 2px;
+    display: flex;
+    width: 300px;
+    margin-bottom: 10px;
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid black;
+    padding-bottom: 15px;
+    outline: none;
+    
+}
+
+#container label{
+    display: flex;
+    width: 300px;
+    padding-top: 10px;
+}
+
+#container input[type="submit"]{
+    width: 200px;
+    background:#000000;
+    border-radius: 20px;
+    cursor: pointer;
+    text-align: center;
+    padding: 10px;
+    justify-items: center;    
+    margin-left: 50px;
+    margin-top: 50px;
+    border: none;
+    color: #fff;
+}
+
+#container input[type="submit"]:hover{
+    background-color: #A6E6FF;
+    color: #000000;
+    
+}
+
+
+#desenho1{
+    width: 250px;
+    height: 250px;
+}
+
+#desenho2{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    left: -50px;
+}
+
+
+.resultado_imc{
+    color: #000000;
+    border: none;
+    padding: 30px 30px 30px 30px;
+    background-color: #fff;
+    width: 300px;
+    height: 400px;
+    display: block;
+    border-radius: 30px;
+    margin-left: 50px;
+}
+
+.result{
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 2px solid black;
+}
+
+.result1{
+    border-bottom: 2px solid black;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+}
+
+.result2{
+    border-bottom: 2px solid black;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+}
+
+.resultado_imc h1{
+    text-align: center;
+}
+
+.baixo{
+    color: #83C635;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+}
+
+.normal{
+    color: #C0D90B;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+}
+
+.sobrepeso{
+    color: #FCA500;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+}
+
+.obe{
+    color: #F67600;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+}
+
+.imgBalanca{
+    width: 100px;
+    height: 100px;
+    align-items: center;
+    margin-left: 100px;
+}
+
+
+@media (max-width: 600px){
+    #desenho1{
+        display: none;
+    }
+    
+    #desenho2{
+        display: none;
+    }
+
+   
+    #container{
+        display: table-column;
+    }
+
+    .resultado_imc{
+        display: flex;
+        
+    }
+}
