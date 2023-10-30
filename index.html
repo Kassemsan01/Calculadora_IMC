@@ -15,25 +15,27 @@
     <form id="container">
         <h1>Calculadora de IMC</h1>
 
+        <!-- Parte do peso -->
         <label>Peso</label>
         <input type="text" id="container_input" placeholder="Exemplo 85.50" required onchange="this.value = this.value.replace(/,/g, '.')">
 
-
+        <!-- Parte da altura -->
         <label>Altura</label>
         <input type="text" id="container_input1" placeholder="Exemplo 1.75" required onchange="this.value = this.value.replace(/,/g, '.')">
 
-
+        <!-- Botão de envio -->
         <input type="submit" value="Calcular">
 
     </form>
 
+    <!-- Parte em que vai mostrar o resultado do IMC -->
     <div class="resultado_imc">
         <div id="operacao">
             <h1>Resultado</h1>
         </div>
     </div>
 
-
+    <!-- Imagens -->
     <img src="./img/$R9N9P8E.jpg" alt="Desenho de uma pesoa balança" id="desenho1">
     <img src="./img/_0a02ba82-023a-472f-ae17-c11744632e08.jpg" alt="Desenho de uma pessoa na balança" id="desenho2">
 
