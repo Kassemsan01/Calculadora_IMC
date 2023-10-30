@@ -76,10 +76,13 @@ const IMC = (valorA, valorB) => {
   } else if (result >= 77.0) {
     const ideal = result - 77.0;
   }
+
+  
 };
 
 contai.addEventListener("submit", (e) => {
   e.preventDefault();
+  opera.innerHTML ="";
 
   const multiplicationNumber = valor1.value;
 
