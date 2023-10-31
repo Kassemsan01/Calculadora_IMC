@@ -3,11 +3,11 @@ const valor2 = document.querySelector("#container_input1");
 const contai = document.querySelector("#container");
 const opera = document.querySelector("#operacao");
 
+// Calculo do IMC
 const IMC = (valorA, valorB) => {
-  // opera.innerHTML = "";
 
   const result = Math.round(parseFloat(valorA / (valorB * valorB)));
-
+  // Parte em que vai ser mostrada no site
   const templete = `<div class = "row">
         <div class = "result1"> Peso: ${valorA} </div>
         <div class = "result2"> Altura: ${valorB} </div>
@@ -22,6 +22,7 @@ const IMC = (valorA, valorB) => {
 
   opera.appendChild(row);
 
+  // Parte de condição do result
   if (result <= 18.5) {
     const baixo = `<div class = "row">
         <div class ="baixo"> Baixo peso </div>
@@ -68,6 +69,7 @@ const IMC = (valorA, valorB) => {
     opera.appendChild(row);
   }
 
+  // Parte em vai zerar os valores do inputs do html
   valor1.value = "";
   valor2.value = "";
 
@@ -80,8 +82,10 @@ const IMC = (valorA, valorB) => {
   
 };
 
+// Parte do botão
 contai.addEventListener("submit", (e) => {
   e.preventDefault();
+  // parte em que vai zerar o "opera" toda vez que apertar o botão
   opera.innerHTML ="";
 
   const multiplicationNumber = valor1.value;
